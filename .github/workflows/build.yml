@@ -25,6 +25,9 @@ jobs:
       contents: write
 
     steps:
+
+    - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.2.app
       - name: Checkout YouMod
         uses: actions/checkout@v7
         with:
